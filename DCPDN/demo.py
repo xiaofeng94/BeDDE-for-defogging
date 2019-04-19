@@ -144,8 +144,6 @@ target= torch.FloatTensor(opt.batchSize, outputChannelSize, opt.imageSize, opt.i
 input = torch.FloatTensor(opt.batchSize, inputChannelSize, opt.imageSize, opt.imageSize)
 
 
-
-
 val_target= torch.FloatTensor(opt.valBatchSize, outputChannelSize, opt.imageSize, opt.imageSize)
 val_input = torch.FloatTensor(opt.valBatchSize, inputChannelSize, opt.imageSize, opt.imageSize)
 label_d = torch.FloatTensor(opt.batchSize)
@@ -161,8 +159,6 @@ val_target = torch.FloatTensor(opt.valBatchSize, outputChannelSize, opt.imageSiz
 val_input = torch.FloatTensor(opt.valBatchSize, inputChannelSize, opt.imageSize, opt.imageSize)
 val_depth = torch.FloatTensor(opt.valBatchSize, inputChannelSize, opt.imageSize, opt.imageSize)
 val_ato = torch.FloatTensor(opt.valBatchSize, inputChannelSize, opt.imageSize, opt.imageSize)
-
-
 
 
 # NOTE: size of 2D output maps in the discriminator
@@ -203,14 +199,7 @@ def psnr(img1, img2):
 import time
 
 
-# NOTE training loop
-# ganIterations = 0
 index=0
-# psnrall = 0
-# ssimall=0
-# iteration = 0
-# print(1)
-# for epoch in range(1):
 for i, data in enumerate(valDataloader, 0):
   t0 = time.time()
 
@@ -240,15 +229,10 @@ for i, data in enumerate(valDataloader, 0):
 
   zz=x_hat.data
   
-  # zz1=zz[0,:,:,:]
-  # vutils.save_image(zz1, os.path.join(directory, file_name[0].split('/')[-1][:-3]+'.png'),
-  #                      normalize=True, scale_each=False)
-
-  index2 = 0
   for i in range(opt.valBatchSize):
       index=index+1
       # print(index)
-      zz1=zz[index2,:,:,:]
+      zz1=zz[0,:,:,:]
 
       vutils.save_image(zz1, os.path.join(directory, str(index-1)+'_DCPCN.png'), normalize=True, scale_each=False)
 
