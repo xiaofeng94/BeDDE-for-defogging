@@ -43,8 +43,13 @@ Code of those methods in our experiments will be available here too.
 
 `python generate_testsample.py`
 
+If it successes, there should be .h5 files in the folder `demo_image`.
+
 3. Test sample images by
 
 ```python demo.py --valDataroot ./demo_image --netG ./demo_model/netG_epoch_8.pth```
 
 Afterwards, the restored images will be saved in the folder `demo_image`
+
+### Testing on BeDDE
+soon ...
