@@ -11,6 +11,8 @@ We evaluate defogging results on those regions.
 # Download
 It will be available at least by the end of May.
 
+You may have a preview of BeDDE in this [Paper](http://sse.tongji.edu.cn/linzhang/ICME2019/BeDDE.pdf)
+
 # Defogging methods
 10 representative defogging methods, i.e.,
 Fast Vis- ibility Restoration (FVR) [24], Dark Channel Prior (DCP), 
