@@ -1,4 +1,4 @@
-# BeDDE & exBeDDE for defogging
+# BeDDE & exBeDDE for defogging evaluation
 BeDDE is a real-world benchmark dataset for evaluations of defogging methods.
 It consists of 208 image paris of foggy images and clear refernece images. 
 
@@ -53,7 +53,7 @@ It will take a while. After that, you will see the performance of our VI on fogg
 
 
 # Defogging methods
-the 10 selected defogging methods are 
+The selected 10 defogging methods are 
 Fast Visibility Restoration (FVR), 
 Dark Channel Prior (DCP), 
 Bayesian Defogging (BayD), 
