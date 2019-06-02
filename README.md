@@ -14,9 +14,9 @@ We find it is more reasonable to evaluate defogged reuslts from two separate asp
 
 
 # Download
-You can download BeDDE on [google drive](https://drive.google.com/file/d/12p-MY2ZygT5Tl8q0oFxDIUg9B5Jn042-/view?usp=sharing) now!
+You can download [BeDDE](https://drive.google.com/file/d/12p-MY2ZygT5Tl8q0oFxDIUg9B5Jn042-/view?usp=sharing) and [exBeDDE](https://drive.google.com/file/d/1swAyQS-j9QNTvLwsCJgbFXnjscB86CeL/view?usp=sharing) on Google drive.
 
-exBeDDE will be available soon later.
+You may also get access to [BeDDE]() or [exBeDDE]() on BaiduYun disk (coming soon).
 
 # Testing
 
