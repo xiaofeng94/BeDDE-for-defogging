@@ -10,7 +10,7 @@ We evaluate defogging results on those regions.
 
 What's more, in order to measure the performance of defogging evaluation metrics, we build an extension of BeDDE, exBeDDE, using 167 foggy images and 1670 defogged images. All foggy images with their clear reference are from 12 cities of BeDDE with most images. All defogged images are generated from the 167 foggy images using 10 defogging methods described below.
 
-We find it is more reasonable to evaluate defogged reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate defogging methods. Details of the criterion may be find in the [paper]() (coming soon).
+We find it is more reasonable to evaluate defogged reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate defogging methods. Details of the criterion may be find in the [paper]() (coming soon) titled as _Defogging Evaluation: Real-World Benchmark Datasets, New Criteria and Baselines_.
 
 
 # Download
