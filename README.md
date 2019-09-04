@@ -49,7 +49,7 @@ It will take a while. After that, you will see the performance of our VI on fogg
 
 2. Set the variable `method_name` in `eval_defog_method.m` to the name of your method folder in each city folder.
 
-3. Set the variable `eval_method` to `VSI` and run the script to get the VSI score of your method on BeDDE.
+3. Set the variable `eval_method` to `VI`, `RI`, `VSI` or other metrics and run the script to get the corresponding score of your method on BeDDE.
 
 
 # Defogging methods
