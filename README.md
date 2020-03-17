@@ -1,16 +1,16 @@
-# BeDDE & exBeDDE for defogging evaluation
-BeDDE is a real-world benchmark dataset for evaluations of defogging methods.
-It consists of 208 image paris of foggy images and clear refernece images. 
+# BeDDE & exBeDDE for dehazing evaluation
+BeDDE is a real-world benchmark dataset for evaluations of dehazing methods.
+It consists of 208 image paris of hazy images and clear refernece images. 
 
 Those images were collected from 34 provincial capital cities of China. 
 Images in each city were collect between 9:00~10:00 over 40 days and only one image were taken in each day.
 
 For each image pair, a manually labelled mask is provided to delineate regions with the same contents.
-We evaluate defogging results on those regions.
+We evaluate dehazing results on those regions.
 
-What's more, in order to measure the performance of defogging evaluation metrics, we build an extension of BeDDE, exBeDDE, using 167 foggy images and 1670 defogged images. All foggy images with their clear reference are from 12 cities of BeDDE with most images. All defogged images are generated from the 167 foggy images using 10 defogging methods described below.
+What's more, in order to measure the performance of dehazing evaluation metrics, we build an extension of BeDDE, exBeDDE, using 167 hazy images and 1670 dehazed images. All hazy images with their clear reference are from 12 cities of BeDDE with most images. All dehazed images are generated from the 167 hazy images using 10 dehazing methods described below.
 
-We find it is more reasonable to evaluate defogged reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate defogging methods. Details of the criterion may be find in the [paper]() (coming soon) titled as _Defogging Evaluation: Real-World Benchmark Datasets, New Criteria and Baselines_.
+We find it is more reasonable to evaluate dehazed reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate dehazing methods. Details of the criterion may be find in the [paper]() (coming soon) titled as _Dehazing Evaluation: Real-World Benchmark Datasets, New Criteria and Baselines_.
 
 
 # Download
@@ -31,7 +31,7 @@ You may also get access to [BeDDE]() or [exBeDDE]() on BaiduYun disk (coming soo
 
 3. Run `eval_defog_method.m`
 
-Then, you will see the VI score of foggy images. You may modify the variables to try other defogging methods or metrics.
+Then, you will see the VI score of hazy images. You may modify the variables to try other dehazing methods or metrics.
 
 ## Test on exBeDDE
 
@@ -41,19 +41,19 @@ Then, you will see the VI score of foggy images. You may modify the variables to
 
 3. Run `assess_IQA_metric.m`
 
-It will take a while. After that, you will see the performance of our VI on foggy groups. You may modify the variables to test on defogged groups or assess other metrics.
+It will take a while. After that, you will see the performance of our VI on hazy groups. You may modify the variables to test on dehazed groups or assess other metrics.
 
-## Test your own defogging method on BeDDE
+## Test your own dehazing method on BeDDE
 
-1. Create a folder named after your method in each city folder of BeDDE. Put the images results of each city to the corresponding folder you just created. Name all the defogged images after their original foggy images or make sure the name of a defogged image starts with the name of its original foggy image.
+1. Create a folder named after your method in each city folder of BeDDE. Put the images results of each city to the corresponding folder you just created. Name all the dehazed images after their original hazy images or make sure the name of a dehazed image starts with the name of its original hazy image.
 
 2. Set the variable `method_name` in `eval_defog_method.m` to the name of your method folder in each city folder.
 
 3. Set the variable `eval_method` to `VI`, `RI`, `VSI` or other metrics and run the script to get the corresponding score of your method on BeDDE.
 
 
-# Defogging methods
-The selected 10 defogging methods are 
+# Dehazing methods
+The selected 10 dehazing methods are 
 Fast Visibility Restoration (FVR), 
 Dark Channel Prior (DCP), 
 Bayesian Defogging (BayD), 
@@ -65,4 +65,4 @@ AOD-Net,
 DCPDN, 
 and GFN,
 
-We test them on BeDDE as the defogging benchmarks. Code of those methods in our experiments will be available in this repo as well. Details of each method can be found in the folder named after the method.
+We test them on BeDDE as the dehazing benchmarks. Code of those methods in our experiments will be available in this repo as well. Details of each method can be found in the folder named after the method.
