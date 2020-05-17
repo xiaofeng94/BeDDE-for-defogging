@@ -1,4 +1,5 @@
 # BeDDE & exBeDDE for dehazing evaluation
+## BeDDE
 BeDDE is a real-world benchmark dataset for evaluations of dehazing methods.
 It consists of 208 image paris of hazy images and clear refernece images. 
 
@@ -8,8 +9,10 @@ Images in each city were collect between 9:00~10:00 over 40 days and only one im
 For each image pair, a manually labelled mask is provided to delineate regions with the same contents.
 We evaluate dehazing results on those regions.
 
-What's more, in order to measure the performance of dehazing evaluation metrics, we build an extension of BeDDE, exBeDDE, using 167 hazy images and 1670 dehazed images. All hazy images with their clear reference are from 12 cities of BeDDE with most images. All dehazed images are generated from the 167 hazy images using 10 dehazing methods described below.
+## exBeDDE
+exBeDDE is an extension of BeDDE, designed to measure the performance of dehazing evaluation metrics. It contains 167 hazy images and 1670 dehazed images. All hazy images with their clear reference are from 12 cities of BeDDE with most images. All dehazed images are generated from the 167 hazy images using 10 dehazing methods described below.
 
+## Visibility Index (VI) and Realness Index (RI)
 We find it is more reasonable to evaluate dehazed reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate dehazing methods. Details of the criterion may be find in the [paper]() (coming soon) titled as _Dehazing Evaluation: Real-World Benchmark Datasets, New Criteria and Baselines_.
 
 
