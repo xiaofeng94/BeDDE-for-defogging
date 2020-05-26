@@ -13,7 +13,7 @@ We evaluate dehazing results on those regions.
 exBeDDE is an extension of BeDDE, designed to measure the performance of dehazing evaluation metrics. It contains 167 hazy images and 1670 dehazed images. All hazy images with their clear reference are from 12 cities of BeDDE with most images. All dehazed images are generated from the 167 hazy images using 10 dehazing methods described below.
 
 ## Visibility Index (VI) and Realness Index (RI)
-We find it is more reasonable to evaluate dehazed reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate dehazing methods. Details of the criterion may be find in the [paper]() (coming soon) titled as _Dehazing Evaluation: Real-World Benchmark Datasets, New Criteria and Baselines_.
+We find it is more reasonable to evaluate dehazed reuslts from two separate aspects, visibility and realness, and acorrdingly propose to two criterion,  visibility index and realness index, to evaluate dehazing methods. Details of the criterion may be find in the [paper](https://ieeexplore.ieee.org/document/9099036) titled as _Dehazing Evaluation: Real-World Benchmark Datasets, New Criteria and Baselines_.
 
 
 # Download
@@ -69,3 +69,10 @@ DCPDN,
 and GFN,
 
 We test them on BeDDE as the dehazing benchmarks. Code of those methods in our experiments will be available in this repo as well. Details of each method can be found in the folder named after the method.
+
+# Publications
+If our datasets and criteria are helpful, please consider citing the following papers. [1] and [2] for BeDDE. [2] for exBeDDE, VI, and RI.
+
+[1] S. Zhao, L. Zhang, _et al._ Evaluation of defogging: A real-world benchmark dataset, a new criterion and baselines. In ICME, pp.1840-1845, 2019.
+
+[2] S. Zhao, L. Zhang, _et al._ Dehazing Evaluation: Real-world Benchmark Datasets, Criteria and Baselines. IEEE Trans. Image Process., early access.
