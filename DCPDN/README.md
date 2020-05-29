@@ -18,3 +18,6 @@ If it successes, there should be .h5 files in the folder `demo_image`.
 ```python demo.py --valDataroot ./demo_image --netG ./demo_model/netG_epoch_8.pth```
 
 Afterwards, the restored images will be saved in the folder `demo_image`
+
+## References
+Original implementation: https://github.com/hezhangsprinter/DCPDN
