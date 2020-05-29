@@ -1,5 +1,9 @@
 # BeDDE & exBeDDE for dehazing evaluation
 ## BeDDE
+|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/chengdu_clear_rs.jpg"  width=""/>|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/chengdu_3_rs.jpg" width=""/>|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/chengdu_2_rs.jpg" width=""/>|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/chengdu_6_rs.jpg" width=""/>|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/chengdu_21_rs.jpg" width=""/>|
+|:---:|:---:|:---:|:---:|:---:|
+|Reference image|Light|Light|Medium|Heavy|
+
 BeDDE is a real-world benchmark dataset for evaluations of dehazing methods.
 It consists of 208 pairs of hazy images and clear refernece images. 
 For each pair, a manually labelled mask is provided to delineate regions with the same contents.
@@ -65,6 +69,17 @@ BeDDE
 2. Set the variable `method_name` in `eval_defog_method.m` to the name of your method.
 
 3. Set the variable `eval_method` to `VI`, `RI`, `VSI` or other metrics and then run the script to get the score for your method on BeDDE.
+
+# Benchmarks
+## Dehazing methods
+All methods were evaluated on BeDDE. VI shows their abilities to restore visibility, RI and LPIPS refer to realness of the results.
+![dehazing benchmarks](https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/dehazing_bm.jpg)
+
+## Dehazing metrics
+All metrics were assessed on exBeDDE's hazy groups for the visibility evaluation and on dehazing groups for the realness evaluation.
+|Visibility evaluation|Realness evaluation|
+|:---:|:---:|
+|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/metric_bm_vi.jpg" width="300"/>|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/metric_bm_ri.jpg" width="300"/>|
 
 # Dehazing methods
 The selected 10 dehazing methods adopted by exBeDDE are 
