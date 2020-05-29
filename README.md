@@ -96,7 +96,7 @@ and GFN.
 
 Code of those methods used in our experiments is available upon email requests. If one is frequently required, we will release it here as well. Current released methods: [DCPDN](https://github.com/xiaofeng94/BeDDE-for-defogging/tree/master/DCPDN)
 
-# Publications
+# References
 If our datasets and criteria are helpful, please consider citing the following papers. [1] and [2] for BeDDE. [2] for exBeDDE, VI, and RI.
 
 [1] S. Zhao, L. Zhang, _et al._ Evaluation of defogging: A real-world benchmark dataset, a new criterion and baselines. In ICME, pp.1840-1845, 2019.
