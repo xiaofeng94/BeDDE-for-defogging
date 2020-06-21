@@ -1,12 +1,14 @@
 clear
 % --------------------------
-BeDDE_root = '.\BeDDE'; % set it to BeDDE root.
+BeDDE_root = './BeDDE'; % set it to BeDDE root.
 
-method_name = 'fog'; % set it to the folder for our results
-eval_method = 'VI'; % 'VI', 'RI'
+method_name = 'refined_DCP_3_ep_60'; % set it to the folder for our results
+eval_method = 'RI'; % 'VI', 'RI'
 
 % --------------------------
-
+% add essential path
+addpath(genpath('tools'));
+addpath(genpath('IQA_metrics'));
 
 % allFolderInfo = dir(image_root);
 % cityFolders = cell(0);
@@ -29,7 +31,7 @@ cityNum = length(cityFolders);
 allScores = [];
 allImages = cell(0);
 for city_id = 1:cityNum
-    cityName = cityFolders{city_id,1};
+    cityName = cityFolders{city_id};
     
     clearImgFolder = fullfile(BeDDE_root,cityName,'gt');
     maskFolder = fullfile(BeDDE_root,cityName,'mask');
