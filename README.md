@@ -99,6 +99,6 @@ Code of those methods used in our experiments is available upon email requests. 
 # References
 If our datasets and criteria are helpful, please consider citing the following papers. [1] and [2] for BeDDE. [2] for exBeDDE, VI, and RI.
 
-[1] S. Zhao, L. Zhang, _et al._ Evaluation of defogging: A real-world benchmark dataset, a new criterion and baselines. In ICME, pp.1840-1845, 2019.
+[1] S. Zhao, L. Zhang, _et al._ Evaluation of defogging: A real-world benchmark dataset, a new criterion and baselines. In _ICME_, pp.1840-1845, 2019.
 
-[2] S. Zhao, L. Zhang, _et al._ Dehazing Evaluation: Real-world Benchmark Datasets, Criteria and Baselines. IEEE Trans. Image Process., early access.
+[2] S. Zhao, L. Zhang, _et al._ Dehazing Evaluation: Real-world Benchmark Datasets, Criteria and Baselines. _IEEE Trans. Image Process._, 28(1):6947-6962, 2020.
