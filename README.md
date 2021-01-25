@@ -4,7 +4,7 @@
 |:---:|:---:|:---:|:---:|:---:|
 |Reference image|Light|Light|Medium|Heavy|
 
-BeDDE is a real-world benchmark dataset for evaluations of dehazing methods.
+BeDDE (read as /ˈbedi/) is a real-world benchmark dataset for evaluations of dehazing methods.
 It consists of 208 pairs of hazy images and clear refernece images. 
 For each pair, a manually labelled mask is provided to delineate regions with the same contents.
 We evaluate dehazing results on those regions.
