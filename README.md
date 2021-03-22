@@ -82,19 +82,25 @@ All metrics were assessed on exBeDDE's hazy groups for the visibility evaluation
 |<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/metric_bm_vi.jpg" width="300"/>|<img src="https://github.com/xiaofeng94/BeDDE-for-defogging/blob/master/Defogging_eval/figures/metric_bm_ri.jpg" width="300"/>|
 
 # Dehazing methods
-The selected 10 dehazing methods adopted by exBeDDE are 
+The selected 14 dehazing methods adopted by exBeDDE are 
 Fast Visibility Restoration (FVR), 
 Dark Channel Prior (DCP), 
 Bayesian Defogging (BayD), 
 Color Attenuation Prior (CAP), 
 Non-Local image Dehazing (NLD), 
 MSCNN, 
-DehazeNet (DeN), 
+DehazeNet, 
 AOD-Net, 
 DCPDN, 
-and GFN.
+GFN, 
+DisentGAN,
+Learning a patch quality comparator  (PQC), 
+EPDN,
+and GridDehazeNet.
 
-Code of those methods used in our experiments is available upon email requests. If one is frequently required, we will release it here as well. Current released methods: [DCPDN](https://github.com/xiaofeng94/BeDDE-for-defogging/tree/master/DCPDN)
+We used offical code for all dehazing methods (except DCP). Please try the code link for those methods listed as follows: [FVR](http://perso.lcpc.fr/tarel.jean-philippe/visibility/), [DCP](https://github.com/sjtrny/Dark-Channel-Haze-Removal), [BayD](https://www.cs.drexel.edu/~kon/codeanddata/defog/), [CAP](https://github.com/JiamingMai/Color-Attenuation-Prior-Dehazing), [NLD](https://github.com/danaberman/non-local-dehazing), [MSCNN](https://github.com/rwenqi/Multi-scale-CNN-Dehazing), [DehazeNet](https://github.com/caibolun/DehazeNet), [AOD-Net](https://github.com/Boyiliee/AOD-Net), [DCPDN](https://github.com/hezhangsprinter/DCPDN) (Also try [this code](https://github.com/xiaofeng94/BeDDE-for-defogging/tree/master/DCPDN) with less issues to fix), [GFN](https://github.com/rwenqi/GFN-dehazing), [DisentGAN](https://github.com/xyang35/Disentangled-GAN), [PQC](https://github.com/san-santra/dehaze_t_comparator), [EPDN](https://github.com/ErinChen1/EPDN), [GridDehazeNet](https://github.com/proteus1991/GridDehazeNet)
+
+<!--Code of those methods used in our experiments is available upon email requests. If one is frequently required, we will release it here as well. Current released methods: [DCPDN](https://github.com/xiaofeng94/BeDDE-for-defogging/tree/master/DCPDN)-->
 
 # References
 If our datasets and criteria are helpful, please consider citing the following papers. [1] and [2] for BeDDE. [2] for exBeDDE, VI, and RI.
