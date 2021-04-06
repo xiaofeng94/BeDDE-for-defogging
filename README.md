@@ -36,7 +36,9 @@ Moreover, the score for each image will be stored in `./statistics/<your_method_
 
 4. Run `eval_defog_method_stat_by_level.m` to get evaluations on level. 
 
-This script requires the stored scores generated in last step. You should modify variables `method_names` and `metric_name` for your case. The difficulty levels are stored in `./fog_level_labels/fog_level.mat`.
+This script requires the stored scores generated in last step, but you may use the example scores for [RefineDNet](https://github.com/xiaofeng94/RefineDNet-for-dehazing). For your case, you should modify variables `method_names` and `metric_name`. 
+
+The difficulty levels are stored in `./fog_level_labels/fog_level.mat`.
 
 ## Test on exBeDDE
 1. Download exBeDDE.rar and unzip it to `./Defogging_eval`
