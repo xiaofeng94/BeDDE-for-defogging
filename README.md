@@ -31,7 +31,12 @@ You may also get access to [the two datasets](https://pan.baidu.com/s/1lUVtdhyrv
 
 3. Run `eval_defog_method.m`
 
-Then, you will see the VI score of hazy images. You may modify the variables to try other dehazing methods or metrics.
+Then, you will see the VI score of hazy images. You may modify the variables to try other dehazing methods or metrics. 
+Moreover, the score for each image will be stored in `./statistics/<your_method_name>_<metric>_eval.mat`.
+
+4. Run `eval_defog_method_stat_by_level.m` to get evaluations on level. 
+
+This script requires the stored scores generated in last step. You should modify variables `method_names` and `metric_name` for your case. The difficulty levels are stored in `./fog_level_labels/fog_level.mat`.
 
 ## Test on exBeDDE
 1. Download exBeDDE.rar and unzip it to `./Defogging_eval`
